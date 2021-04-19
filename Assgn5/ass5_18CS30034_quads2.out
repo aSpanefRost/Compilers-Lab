@@ -1,0 +1,96 @@
+===================================================================================================================
+Symbol Table: Global                                                             Parent: null
+----------------------------------------------------------------------------------------------------
+Name           Type                     Initial Value                 Size        Offset      Nested
+-------------------------------------------------------------------------------------------------------------------
+main                integer                                   4           0          main
+-------------------------------------------------------------------------------------------------------------------
+
+===================================================================================================================
+Symbol Table: main                                                               Parent: Global
+----------------------------------------------------------------------------------------------------
+Name           Type                     Initial Value                 Size        Offset      Nested
+-------------------------------------------------------------------------------------------------------------------
+return              integer                                   4           0          null
+n                   integer                                   4           4          null
+i                   integer                                   4           8          null
+flag                integer                  0                4           12         null
+t00                 integer                  0                4           16         null
+printf              integer                                   4           20         null
+t01                 ptr(char)                "Enter a positive integer: "4           24         null
+t02                 integer                                   4           28         null
+scanf               integer                                   4           32         null
+t03                 ptr(char)                "%d"             4           36         null
+t04                 ptr(integer)                              4           40         null
+t05                 integer                                   4           44         null
+t06                 integer                  2                4           48         null
+t07                 integer                                   4           52         null
+t08                 integer                  2                4           56         null
+t09                 integer                                   4           60         null
+t10                 integer                                   4           64         null
+t11                 integer                  0                4           68         null
+t12                 integer                  1                4           72         null
+t13                 integer                                   4           76         null
+t14                 integer                  1                4           80         null
+t15                 ptr(char)                "1 is neither prime nor composite."4           84         null
+t16                 integer                                   4           88         null
+t17                 integer                  0                4           92         null
+t18                 ptr(char)                "%d is a prime number."4           96         null
+t19                 integer                                   4           100        null
+t20                 ptr(char)                "%d is not a prime number."4           104        null
+t21                 integer                                   4           108        null
+t22                 integer                  0                4           112        null
+-------------------------------------------------------------------------------------------------------------------
+
+==============================
+Quad Translation
+------------------------------
+
+main: 
+
+	1   :	t00 = 0
+	2   :	flag = t00
+	3   :	param t01
+	4   :	t02 = call printf, 1
+	5   :	param t03
+	6   :	t04 = &n
+	7   :	param t04
+	8   :	t05 = call scanf, 2
+	9   :	t06 = 2
+	10  :	i = t06
+	11  :	t08 = 2
+	12  :	t09 = n / t08
+	13  :	if i <= t09 goto 17
+	14  :	goto 26
+	15  :	i = i + 1
+	16  :	goto 11
+	17  :	t10 = n % i
+	18  :	t11 = 0
+	19  :	if t10 == t11 goto 22
+	20  :	goto 15
+	21  :	goto 25
+	22  :	t12 = 1
+	23  :	flag = t12
+	24  :	goto 15
+	25  :	goto 15
+	26  :	t14 = 1
+	27  :	if n == t14 goto 30
+	28  :	goto 33
+	29  :	goto 44
+	30  :	param t15
+	31  :	t16 = call printf, 1
+	32  :	goto 44
+	33  :	t17 = 0
+	34  :	if flag == t17 goto 37
+	35  :	goto 41
+	36  :	goto 44
+	37  :	param t18
+	38  :	param n
+	39  :	t19 = call printf, 2
+	40  :	goto 44
+	41  :	param t20
+	42  :	param n
+	43  :	t21 = call printf, 2
+	44  :	t22 = 0
+	45  :	ret t22
+------------------------------
