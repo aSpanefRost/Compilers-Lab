@@ -1,0 +1,83 @@
+==============================================================================
+Generated Quads for the program
+  0. :t000	=	2 2
+  1. :a	=	t000 t000
+  2. :t001	=	4 4
+  3. :b	=	t001 t001
+  4. :t002	=	6 6
+  5. :c	=	t002 t002
+  6. :param	_0
+  7. :t003	=	call prints, 1
+  8. :param	_1
+  9. :t004	=	call prints, 1
+ 10. :param	a
+ 11. :t005	=	call printi, 1
+ 12. :param	b
+ 13. :t006	=	call printi, 1
+ 14. :param	c
+ 15. :t007	=	call printi, 1
+ 16. :temp	=	b b
+ 17. :t008	=	b b
+ 18. :b	=	a a
+ 19. :t009	=	a a
+ 20. :a	=	c c
+ 21. :t010	=	c c
+ 22. :c	=	temp temp
+ 23. :t011	=	temp temp
+ 24. :param	_2
+ 25. :t012	=	call prints, 1
+ 26. :param	a
+ 27. :t013	=	call printi, 1
+ 28. :param	b
+ 29. :t014	=	call printi, 1
+ 30. :param	c
+ 31. :t015	=	call printi, 1
+ 32. :t016	=	0 0
+ 33. :return	t016
+==============================================================================
+Symbol table Maintained For the Given Program
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Symbol Table : Global
+Offset = 0
+Start Quad Index = 0
+End Quad Index =  0
+Name	Value	var_type	size	Offset	Type
+printi	Null	func		0	-1	ptr-to-St( Global )Int 
+readi	Null	func		0	-1	ptr-to-St( Global )Int 
+prints	Null	func		0	-1	ptr-to-St( Global )Int 
+main	Null	func		0	-1	ptr-to-St( main )Int 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+=============================================================================
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Symbol Table : main
+Offset = -84
+Start Quad Index = 0
+End Quad Index =  33
+Name	Value	var_type	size	Offset	Type
+retVal	Null	return		4	0	Int 
+a	2	local		4	-4	Int 
+t000	2	temp		4	-8	Int 
+b	4	local		4	-12	Int 
+t001	4	temp		4	-16	Int 
+c	6	local		4	-20	Int 
+t002	6	temp		4	-24	Int 
+temp	Null	local		4	-28	Int 
+t003	Null	temp		4	-32	Int 
+t004	Null	temp		4	-36	Int 
+t005	Null	temp		4	-40	Int 
+t006	Null	temp		4	-44	Int 
+t007	Null	temp		4	-48	Int 
+t008	Null	temp		4	-52	Int 
+t009	Null	temp		4	-56	Int 
+t010	Null	temp		4	-60	Int 
+t011	Null	temp		4	-64	Int 
+t012	Null	temp		4	-68	Int 
+t013	Null	temp		4	-72	Int 
+t014	Null	temp		4	-76	Int 
+t015	Null	temp		4	-80	Int 
+t016	0	temp		4	-84	Int 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

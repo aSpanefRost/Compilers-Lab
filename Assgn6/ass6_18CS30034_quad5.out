@@ -1,0 +1,126 @@
+==============================================================================
+Generated Quads for the program
+  0. :t000	=	1 1
+  1. :if  n <=t000	goto  4
+  2. :goto 7
+  3. :goto 7
+  4. :t001	=	0 0
+  5. :return	t001
+  6. :goto 7
+  7. :t002	=	2 2
+  8. :i	=	t002 t002
+  9. :t003	=	t002 t002
+ 10. :if  i <n	goto  16
+ 11. :goto 27
+ 12. :goto 27
+ 13. :t004	=	i i
+ 14. :i	=	i + 1
+ 15. :goto 10
+ 16. :t005	=	n %% i
+ 17. :j	=	t005 t005
+ 18. :t006	=	t005 t005
+ 19. :t007	=	0 0
+ 20. :if  j ==t007	goto  23
+ 21. :goto 13
+ 22. :goto 26
+ 23. :t008	=	0 0
+ 24. :return	t008
+ 25. :goto 13
+ 26. :goto 13
+ 27. :t009	=	1 1
+ 28. :return	t009
+ 29. :t010	=	1 1
+ 30. :err	=	t010 t010
+ 31. :param	_0
+ 32. :t011	=	call prints, 1
+ 33. :param	_1
+ 34. :t012	=	call prints, 1
+ 35. :t013	=	& err
+ 36. :param	t013
+ 37. :t014	=	call readi, 1
+ 38. :n	=	t014 t014
+ 39. :t015	=	t014 t014
+ 40. :param	n
+ 41. :t016	=	call isPrime, 1
+ 42. :x	=	t016 t016
+ 43. :t017	=	t016 t016
+ 44. :t018	=	1 1
+ 45. :if  x ==t018	goto  48
+ 46. :goto 51
+ 47. :goto 54
+ 48. :param	_2
+ 49. :t019	=	call prints, 1
+ 50. :goto 54
+ 51. :param	_3
+ 52. :t020	=	call prints, 1
+ 53. :goto 54
+ 54. :param	_4
+ 55. :t021	=	call prints, 1
+ 56. :t022	=	0 0
+ 57. :return	t022
+==============================================================================
+Symbol table Maintained For the Given Program
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Symbol Table : Global
+Offset = 0
+Start Quad Index = 0
+End Quad Index =  0
+Name	Value	var_type	size	Offset	Type
+printi	Null	func		0	-1	ptr-to-St( Global )Int 
+readi	Null	func		0	-1	ptr-to-St( Global )Int 
+prints	Null	func		0	-1	ptr-to-St( Global )Int 
+isPrime	Null	func		0	-1	ptr-to-St( isPrime )Int 
+main	Null	func		0	-1	ptr-to-St( main )Int 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+=============================================================================
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Symbol Table : isPrime
+Offset = -52
+Start Quad Index = 0
+End Quad Index =  28
+Name	Value	var_type	size	Offset	Type
+retVal	Null	return		4	0	Int 
+n	Null	param		4	-4	Int 
+i	Null	local		4	-8	Int 
+j	Null	local		4	-12	Int 
+t000	1	temp		4	-16	Int 
+t001	0	temp		4	-20	Int 
+t002	2	temp		4	-24	Int 
+t003	Null	temp		4	-28	Int 
+t004	Null	temp		4	-32	Int 
+t005	Null	temp		4	-36	Int 
+t006	Null	temp		4	-40	Int 
+t007	0	temp		4	-44	Int 
+t008	0	temp		4	-48	Int 
+t009	1	temp		4	-52	Int 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Symbol Table : main
+Offset = -68
+Start Quad Index = 29
+End Quad Index =  57
+Name	Value	var_type	size	Offset	Type
+retVal	Null	return		4	0	Int 
+n	Null	local		4	-4	Int 
+x	Null	local		4	-8	Int 
+err	1	local		4	-12	Int 
+t010	1	temp		4	-16	Int 
+t011	Null	temp		4	-20	Int 
+t012	Null	temp		4	-24	Int 
+t013	Null	temp		8	-32	ptr(Int )
+t014	Null	temp		4	-36	Int 
+t015	Null	temp		4	-40	Int 
+t016	Null	temp		4	-44	Int 
+t017	Null	temp		4	-48	Int 
+t018	1	temp		4	-52	Int 
+t019	Null	temp		4	-56	Int 
+t020	Null	temp		4	-60	Int 
+t021	Null	temp		4	-64	Int 
+t022	0	temp		4	-68	Int 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

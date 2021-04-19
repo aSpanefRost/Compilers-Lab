@@ -1,0 +1,74 @@
+==============================================================================
+Generated Quads for the program
+  0. :param	_0
+  1. :t000	=	call prints, 1
+  2. :t001	=	5 5
+  3. :rows	=	t001 t001
+  4. :t002	=	t001 t001
+  5. :t003	=	1 1
+  6. :i	=	t003 t003
+  7. :t004	=	t003 t003
+  8. :if  i <=rows	goto  14
+  9. :goto 29
+ 10. :goto 29
+ 11. :i	=	i + 1
+ 12. :t005	=	i i
+ 13. :goto 8
+ 14. :t006	=	1 1
+ 15. :j	=	t006 t006
+ 16. :t007	=	t006 t006
+ 17. :if  j <=i	goto  23
+ 18. :goto 26
+ 19. :goto 26
+ 20. :j	=	j + 1
+ 21. :t008	=	j j
+ 22. :goto 17
+ 23. :param	_1
+ 24. :t009	=	call prints, 1
+ 25. :goto 20
+ 26. :param	_2
+ 27. :t010	=	call prints, 1
+ 28. :goto 11
+ 29. :t011	=	0 0
+ 30. :return	t011
+==============================================================================
+Symbol table Maintained For the Given Program
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Symbol Table : Global
+Offset = 0
+Start Quad Index = 0
+End Quad Index =  0
+Name	Value	var_type	size	Offset	Type
+printi	Null	func		0	-1	ptr-to-St( Global )Int 
+readi	Null	func		0	-1	ptr-to-St( Global )Int 
+prints	Null	func		0	-1	ptr-to-St( Global )Int 
+main	Null	func		0	-1	ptr-to-St( main )Int 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+=============================================================================
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Symbol Table : main
+Offset = -60
+Start Quad Index = 0
+End Quad Index =  30
+Name	Value	var_type	size	Offset	Type
+retVal	Null	return		4	0	Int 
+i	Null	local		4	-4	Int 
+j	Null	local		4	-8	Int 
+rows	Null	local		4	-12	Int 
+t000	Null	temp		4	-16	Int 
+t001	5	temp		4	-20	Int 
+t002	Null	temp		4	-24	Int 
+t003	1	temp		4	-28	Int 
+t004	Null	temp		4	-32	Int 
+t005	Null	temp		4	-36	Int 
+t006	1	temp		4	-40	Int 
+t007	Null	temp		4	-44	Int 
+t008	Null	temp		4	-48	Int 
+t009	Null	temp		4	-52	Int 
+t010	Null	temp		4	-56	Int 
+t011	0	temp		4	-60	Int 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

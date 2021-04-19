@@ -1,0 +1,81 @@
+==============================================================================
+Generated Quads for the program
+  0. :param	_0
+  1. :t000	=	call prints, 1
+  2. :t001	=	24 24
+  3. :n1	=	t001 t001
+  4. :t002	=	t001 t001
+  5. :t003	=	135 135
+  6. :n2	=	t003 t003
+  7. :t004	=	t003 t003
+  8. :param	n1
+  9. :param	n2
+ 10. :t005	=	call hcf, 2
+ 11. :param	t005
+ 12. :t006	=	call printi, 1
+ 13. :t007	=	0 0
+ 14. :return	t007
+ 15. :t008	=	0 0
+ 16. :if  n2 !=t008	goto  19
+ 17. :goto 25
+ 18. :goto 27
+ 19. :t009	=	n1 %% n2
+ 20. :param	n2
+ 21. :param	t009
+ 22. :t010	=	call hcf, 2
+ 23. :return	t010
+ 24. :goto -1
+ 25. :return	n1
+ 26. :goto -1
+==============================================================================
+Symbol table Maintained For the Given Program
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Symbol Table : Global
+Offset = 0
+Start Quad Index = 0
+End Quad Index =  0
+Name	Value	var_type	size	Offset	Type
+printi	Null	func		0	-1	ptr-to-St( Global )Int 
+readi	Null	func		0	-1	ptr-to-St( Global )Int 
+prints	Null	func		0	-1	ptr-to-St( Global )Int 
+hcf	Null	func		0	-1	ptr-to-St( hcf )Int 
+main	Null	func		0	-1	ptr-to-St( main )Int 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+=============================================================================
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Symbol Table : hcf
+Offset = -20
+Start Quad Index = 15
+End Quad Index =  26
+Name	Value	var_type	size	Offset	Type
+retVal	Null	return		4	0	Int 
+n1	Null	param		4	-8	Int 
+n2	Null	param		4	-4	Int 
+t008	0	temp		4	-12	Int 
+t009	Null	temp		4	-16	Int 
+t010	Null	temp		4	-20	Int 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Symbol Table : main
+Offset = -40
+Start Quad Index = 0
+End Quad Index =  14
+Name	Value	var_type	size	Offset	Type
+retVal	Null	return		4	0	Int 
+n1	Null	local		4	-4	Int 
+n2	Null	local		4	-8	Int 
+t000	Null	temp		4	-12	Int 
+t001	24	temp		4	-16	Int 
+t002	Null	temp		4	-20	Int 
+t003	135	temp		4	-24	Int 
+t004	Null	temp		4	-28	Int 
+t005	Null	temp		4	-32	Int 
+t006	Null	temp		4	-36	Int 
+t007	0	temp		4	-40	Int 
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
